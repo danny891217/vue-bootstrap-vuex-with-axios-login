@@ -3,7 +3,8 @@ import { RouterView } from 'vue-router'
 </script>
 
 <script>
-import PageHeader from './components/PageHealer.vue';
+import PageHeader from './components/PageHeader.vue';
+
 export default {
   components: {
     'page-header': PageHeader
@@ -12,9 +13,10 @@ export default {
 </script>
 
 <template>
-  <div class="text-center main_div">
+  <div class="text-center">
     <page-header></page-header>
     <RouterView />
+    <pulse-loader></pulse-loader>
   </div>
 </template>
 
@@ -24,11 +26,9 @@ body {
   height: 100%;
 }
 
-.main_div {
-  display: flex;
-  align-items: center;
-  padding-top: 40px;
-  padding-bottom: 40px;
+#app {
+  padding-bottom: 20px;
   background-color: #f5f5f5;
+  height: 100%;
 }
 </style>

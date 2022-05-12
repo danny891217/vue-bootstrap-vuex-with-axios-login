@@ -36,7 +36,7 @@
 
 <script>
 export default {
-  name: "PageHealer",
+  name: "PageHeader",
   methods: {
     isShowHeader() {
       return this.$route.path.indexOf('login') < 0
@@ -46,5 +46,7 @@ export default {
 </script>
 
 <style scoped>
-
+.navbar {
+  margin-bottom: 20px;
+}
 </style>
